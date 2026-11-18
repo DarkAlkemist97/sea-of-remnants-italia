@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --sea: #102d46;
-  --sea-deep: #071827;
-  --sea-mid: #1c4662;
-  --teal: #75d4dc;
+  --sea: #123653;
+  --sea-deep: #081b2c;
+  --sea-mid: #1d4b6a;
+  --teal: #78d9e4;
   --coral: #ed4f9b;
-  --sand: #f2e8dc;
-  --ink: #142f43;
-  --muted: #a8c0ce;
+  --sand: #f4eadf;
+  --ink: #17364c;
+  --muted: #a9c3d1;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -22,7 +22,7 @@ body {
 }
 .nav {
   min-height: 82px; padding: 20px 7vw; display: flex; align-items: center; justify-content: space-between;
-  position: relative; z-index: 3; background: #0b2238; border-bottom: 1px solid rgba(243,233,210,.13);
+  position: relative; z-index: 3; background: #0d2941; border-bottom: 1px solid rgba(243,233,210,.13);
 }
 .brand { color: var(--sand); text-decoration: none; font: 800 1.25rem 'Barlow Condensed', sans-serif; letter-spacing: 1.4px; }
 .brand span { color: var(--coral); }
@@ -45,22 +45,22 @@ h1 em, .world-copy h2 em, .join h2 em { color: var(--coral); font-style: normal;
 .button:hover { transform: translateY(-3px); }
 .button span { margin-left: 8px; }
 .primary { color: #102b37; background: var(--coral); box-shadow: 5px 5px 0 var(--teal); }
-.primary:hover { background: #f36bb0; }
+.primary:hover { background: #f36db0; }
 .secondary { color: var(--sand); border: 1px solid rgba(243,233,210,.55); background: rgba(9,29,42,.3); }
 .hero-stamp { position: absolute; z-index: 1; right: 8%; bottom: 13%; color: var(--sand); font: 800 1.3rem 'Barlow Condensed'; line-height: .75; letter-spacing: 3px; border: 1px solid rgba(243,233,210,.65); padding: 14px 12px; transform: rotate(-9deg); text-align: center; }
 .hero-stamp i { color: var(--coral); font-style: normal; }
 .hero-caption { position: absolute; bottom: 24px; right: 7vw; z-index: 1; font-size: .6rem; letter-spacing: 2px; color: rgba(243,233,210,.75); }
 .intro-strip { display: flex; gap: 24px; align-items: center; justify-content: center; padding: 22px 7vw; background: var(--teal); color: var(--sea-deep); }
 .intro-strip p { font-size: .66rem; letter-spacing: 1.7px; font-weight: 700; text-align: center; }
-.intro-strip b { color: #b52f73; }
+.intro-strip b { color: #b83278; }
 .intro-strip .line { height: 1px; width: 60px; background: rgba(9,29,42,.35); }
-.community-section { padding: 100px 7vw 110px; background: #102d46; }
+.community-section { padding: 100px 7vw 110px; background: #123653; }
 .section-heading { max-width: 680px; margin: 0 auto 42px; text-align: center; }
 .section-heading h2, .world-copy h2, .join h2 { font-size: clamp(3.1rem, 6vw, 5.5rem); line-height: .9; margin: 16px 0; }
 .section-heading h2 span { color: var(--coral); }
 .section-heading > p:last-child { color: #b4c5c6; line-height: 1.7; font-size: .9rem; }
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1250px; margin: auto; }
-.card { background: #173d59; border: 1px solid rgba(243,233,210,.13); overflow: hidden; }
+.card { background: #194563; border: 1px solid rgba(243,233,210,.13); overflow: hidden; }
 .card-photo { height: 220px; background-size: cover; background-position: center; transition: transform .45s; }
 .card:hover .card-photo { transform: scale(1.04); }
 .photo-crew { background-image: url('https://media.pocketgamer.com/artwork/na-37504-1770638310/sea-of-remnants-rs-keyvis.jpg'); background-position: center 32%; }
@@ -70,17 +70,17 @@ h1 em, .world-copy h2 em, .join h2 em { color: var(--coral); font-style: normal;
 .card-number { color: var(--teal); font-size: .61rem; letter-spacing: 2px; font-weight: 800; }
 .card h3 { font-size: 2rem; margin: 12px 0 8px; }
 .card p { color: #b7c6c7; font-size: .85rem; line-height: 1.75; margin: 0; }
-.world-feature { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 480px; background: #f0e4d6; color: var(--ink); }
+.world-feature { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 480px; background: #f0e5d9; color: var(--ink); }
 .world-image { min-height: 420px; background: url('https://pbs.twimg.com/media/HAh0WztacAAkSim.jpg') center 30%/cover no-repeat; }
 .world-copy { padding: 70px clamp(35px, 7vw, 110px); align-self: center; }
 .world-copy .eyebrow { color: #347f9b; }
 .world-copy h2 { margin: 18px 0; }
 .world-copy p:not(.eyebrow) { color: #52656a; line-height: 1.85; font-size: .9rem; max-width: 470px; }
 .text-link { display: inline-block; margin-top: 20px; color: var(--ink); text-decoration: none; font-size: .72rem; font-weight: 800; letter-spacing: 1px; border-bottom: 1px solid #a4b9b2; padding-bottom: 10px; }
-.join { text-align: center; padding: 100px 20px 115px; background: radial-gradient(ellipse at 50% 110%, rgba(117,212,220,.18), transparent 55%), #081d32; }
+.join { text-align: center; padding: 100px 20px 115px; background: radial-gradient(ellipse at 50% 110%, rgba(120,217,228,.16), transparent 55%), #0a2036; }
 .join h2 { margin: 20px 0 14px; }
 .join > p:not(.eyebrow) { color: #b7c6c7; font-size: .9rem; margin-bottom: 30px; }
-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; padding: 26px 7vw; background: #061522; color: #91a8ad; font-size: .68rem; letter-spacing: .6px; }
+footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 18px; padding: 26px 7vw; background: #061624; color: #91a8ad; font-size: .68rem; letter-spacing: .6px; }
 .footer-brand { color: var(--sand); font: 800 1rem 'Barlow Condensed'; letter-spacing: 1px; }
 footer a { color: var(--teal); text-decoration: none; }
 @media (max-width: 850px) {
@@ -116,13 +116,13 @@ footer a { color: var(--teal); text-decoration: none; }
 
 
 /* News feature and article page */
-.news-feature { display: grid; grid-template-columns: 1fr 1fr; min-height: 390px; background: #173d59; }
+.news-feature { display: grid; grid-template-columns: 1fr 1fr; min-height: 390px; background: #194563; }
 .news-feature-copy { align-self: center; padding: 65px clamp(30px, 7vw, 100px); }
 .news-feature-copy h2 { font: 800 clamp(2.8rem, 5vw, 4.5rem)/.9 'Barlow Condensed', sans-serif; text-transform: uppercase; margin: 16px 0; }
 .news-feature-copy h2 em { color: var(--coral); font-style: normal; }
 .news-feature-copy p:not(.eyebrow) { color: #b7c6c7; line-height: 1.8; font-size: .9rem; }
 .news-feature-art { min-height: 340px; background: linear-gradient(90deg, rgba(23,59,74,.12), transparent), url('https://r.res.easebar.com/pic/20250605/7c0965be-002a-47c1-b5df-6159ce405566.jpg') center/cover no-repeat; }
-.article-page { background: #102d46; }
+.article-page { background: #123653; }
 .article-hero { padding: 95px 7vw 75px; background: linear-gradient(90deg, rgba(7,25,36,.95), rgba(7,25,36,.62)), url('https://r.res.easebar.com/pic/20250605/7c0965be-002a-47c1-b5df-6159ce405566.jpg') center/cover; }
 .article-hero h1 { max-width: 950px; }
 .article-lead { max-width: 760px; color: #d0dcda; line-height: 1.8; font-size: 1.05rem; }
@@ -133,13 +133,13 @@ footer a { color: var(--teal); text-decoration: none; }
 .article-content h2 { font-size: 2.4rem; color: var(--sand); line-height: 1; margin: 48px 0 15px; }
 .article-intro { font-size: 1.08rem; }
 .fact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 35px 0 18px; }
-.fact-grid div { padding: 20px; background: #173d59; border: 1px solid rgba(243,233,210,.13); }
+.fact-grid div { padding: 20px; background: #194563; border: 1px solid rgba(243,233,210,.13); }
 .fact-grid span { display: block; color: var(--teal); font-size: .61rem; letter-spacing: 1px; font-weight: 800; margin-bottom: 8px; }
 .fact-grid strong { font: 700 1.25rem 'Barlow Condensed', sans-serif; }
 .article-note { color: #9fb6ba; font-size: .82rem; }
 .article-content ul { padding-left: 22px; }
 .article-content li { margin: 8px 0; }
-.official-box { margin: 50px 0; padding: 30px; background: #f0e4d6; color: #18313b; }
+.official-box { margin: 50px 0; padding: 30px; background: #f0e5d9; color: #18313b; }
 .official-box .eyebrow { color: #347f9b; }
 .official-box h3 { font-size: 2rem; margin: 12px 0; }
 .official-box p:not(.eyebrow) { color: #52656a; }
@@ -158,32 +158,108 @@ footer a { color: var(--teal); text-decoration: none; }
 }
 
 
-/* Official Sea of Remnants-inspired palette: deep ocean blue, rose/magenta memory currents, bright sea-glass cyan */
+/* ==========================================================
+   SEA OF REMNANTS ITALIA — OCEAN / MEMORY COLOR SYSTEM
+   Inspired by the official game's ocean blues and rose-memory
+   visual identity; original layout and content retained.
+   ========================================================== */
 :root {
-  --sea: #102d46;
-  --sea-deep: #071827;
-  --sea-mid: #1c4662;
-  --teal: #75d4dc;
+  --sea: #123653;
+  --sea-deep: #081b2c;
+  --sea-mid: #1d4b6a;
+  --teal: #78d9e4;
   --coral: #ed4f9b;
-  --sand: #f2e8dc;
-  --ink: #142f43;
-  --muted: #a8c0ce;
+  --sand: #f4eadf;
+  --ink: #17364c;
+  --muted: #a9c3d1;
 }
-.intro-strip { background: #75d4dc; }
-.intro-strip b { color: #b52f73; }
-.section-heading h2 span { color: #ed4f9b; }
-.world-copy .eyebrow { color: #347f9b; }
-.news-feature { background: #173d59; }
+body { background: var(--sea-deep); }
+.nav { background: rgba(8,27,44,.97); border-bottom-color: rgba(120,217,228,.20); }
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgba(5,20,35,.96) 0%, rgba(7,28,47,.83) 43%, rgba(7,28,47,.16) 100%),
+    linear-gradient(0deg, rgba(5,20,35,.72), transparent 52%);
+}
+.eyebrow { color: var(--teal); }
+h1 em, .world-copy h2 em, .join h2 em,
+.news-feature-copy h2 em { color: var(--coral); }
+.primary { background: var(--coral); color: #1a2336; box-shadow: 5px 5px 0 var(--teal); }
+.primary:hover { background: #f36db0; }
+.intro-strip { background: #78d9e4; color: #09243a; }
+.intro-strip b { color: #b83278; }
+.community-section { background: #123653; }
+.card { background: #194563; border-color: rgba(244,234,223,.14); }
+.card-number { color: #78d9e4; }
+.world-feature { background: #f0e5d9; color: #17364c; }
+.world-copy .eyebrow, .official-box .eyebrow { color: #347f9b; }
+.world-copy p:not(.eyebrow), .official-box p:not(.eyebrow) { color: #526b7a; }
+.text-link { color: #17364c; border-bottom-color: #9bbbc5; }
+.news-feature { background: #194563; }
+.news-feature-copy p:not(.eyebrow) { color: #c0d0d8; }
 .join {
   background:
-    radial-gradient(ellipse at 50% 110%, rgba(237,79,155,.18), transparent 48%),
-    radial-gradient(ellipse at 15% 0%, rgba(117,212,220,.10), transparent 42%),
-    #081d32;
+    radial-gradient(ellipse at 50% 110%, rgba(237,79,155,.20), transparent 50%),
+    radial-gradient(ellipse at 10% 0%, rgba(120,217,228,.12), transparent 38%),
+    #0a2036;
 }
+footer { background: #061624; color: #a9c3d1; }
+footer a { color: #78d9e4; }
+.article-page { background: #123653; }
+.article-hero {
+  background:
+    linear-gradient(90deg, rgba(5,20,35,.96), rgba(7,28,47,.65)),
+    url('https://r.res.easebar.com/pic/20250605/7c0965be-002a-47c1-b5df-6159ce405566.jpg') center/cover;
+}
+.article-content { color: #d4e0e3; }
+.article-content strong, .article-content h2 { color: var(--sand); }
+.article-meta, .fact-grid span { color: #78d9e4; }
+.fact-grid div { background: #194563; border-color: rgba(244,234,223,.14); }
+.official-box { background: #f0e5d9; color: #17364c; }
+.article-disclaimer { border-top-color: rgba(244,234,223,.2); color: #a9c3d1; }
 
-.discord-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;color:#fff;background:#5865f2;border:1px solid rgba(255,255,255,.16);box-shadow:5px 5px 0 rgba(117,212,220,.9);text-decoration:none;font-weight:800;letter-spacing:.7px;transition:transform .2s ease,background .2s ease}
-.discord-button:hover{color:#fff;background:#4752c4;transform:translateY(-3px)}
-.discord-icon{display:block;width:25px;height:25px;flex:0 0 25px}
-.discord-nav{padding:12px 17px;font-size:.72rem;border-radius:5px}
-.discord-hero,.discord-bottom{min-height:62px;padding:18px 25px;font-size:.78rem}
-@media(max-width:520px){.discord-hero,.discord-bottom{width:100%;min-height:60px;padding:16px 13px;font-size:.68rem}}
+/* Discord CTAs: unmistakable Discord mark and consistent placement */
+.discord-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #fff !important;
+  background: #5865f2;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 rgba(120,217,228,.88);
+  text-decoration: none;
+  font-weight: 800;
+  letter-spacing: .7px;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.discord-button:hover {
+  background: #4752c4;
+  transform: translateY(-3px);
+  box-shadow: 5px 8px 0 rgba(120,217,228,.88);
+}
+.discord-icon { display: block; width: 26px; height: 26px; flex: 0 0 26px; }
+.discord-arrow { font-size: 1.05em; margin-left: 2px; color: #fff !important; }
+.discord-nav { padding: 12px 17px; font-size: .72rem; box-shadow: 3px 3px 0 rgba(120,217,228,.78); }
+.discord-nav .discord-icon { width: 21px; height: 21px; flex-basis: 21px; }
+.discord-hero, .discord-bottom {
+  min-height: 64px;
+  padding: 18px 25px;
+  font-size: .78rem;
+  box-shadow: 6px 6px 0 var(--teal);
+}
+.discord-hero .discord-icon, .discord-bottom .discord-icon { width: 30px; height: 30px; flex-basis: 30px; }
+@media (max-width: 520px) {
+  .nav { gap: 10px; }
+  .nav-link.discord-nav { padding: 10px 11px; gap: 7px; font-size: .59rem; }
+  .discord-nav .discord-icon { width: 19px; height: 19px; flex-basis: 19px; }
+  .discord-hero, .discord-bottom {
+    width: 100%;
+    min-height: 60px;
+    padding: 16px 12px;
+    gap: 8px;
+    font-size: .65rem;
+    justify-content: center;
+  }
+  .discord-hero .discord-icon, .discord-bottom .discord-icon { width: 25px; height: 25px; flex-basis: 25px; }
+}
