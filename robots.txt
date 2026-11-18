@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://darkalkemist97.github.io/sea-of-remnants-italia/sitemap.xml
