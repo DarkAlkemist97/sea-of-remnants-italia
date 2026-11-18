@@ -156,3 +156,19 @@ footer a { color: var(--teal); text-decoration: none; }
   .article-content h2 { font-size: 2rem; }
   .article-actions { align-items: flex-start; flex-direction: column; }
 }
+
+/* Discord calls to action */
+.discord-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;color:#fff;background:#5865f2;border:1px solid rgba(255,255,255,.16);box-shadow:5px 5px 0 rgba(112,200,193,.9);text-decoration:none;font-weight:800;letter-spacing:.7px;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}
+.discord-button:hover{color:#fff;background:#4752c4;transform:translateY(-3px);box-shadow:5px 8px 0 rgba(112,200,193,.9)}
+.discord-icon{display:block;width:25px;height:25px;flex:0 0 25px}
+.discord-arrow{font-size:1.05em;margin-left:2px}
+.discord-nav{padding:12px 17px;font-size:.72rem;border-radius:5px;box-shadow:3px 3px 0 rgba(112,200,193,.75)}
+.discord-nav .discord-icon{width:21px;height:21px;flex-basis:21px}
+.discord-hero,.discord-bottom{min-height:62px;padding:18px 25px;font-size:.78rem;box-shadow:6px 6px 0 var(--teal)}
+.discord-hero .discord-icon,.discord-bottom .discord-icon{width:29px;height:29px;flex-basis:29px}
+@media(max-width:520px){
+.nav-link.discord-nav{padding:10px 11px;gap:7px;font-size:.61rem}
+.discord-nav .discord-icon{width:19px;height:19px;flex-basis:19px}
+.discord-hero,.discord-bottom{width:100%;min-height:60px;padding:16px 13px;font-size:.68rem;gap:9px;justify-content:center}
+.discord-hero .discord-icon,.discord-bottom .discord-icon{width:25px;height:25px;flex-basis:25px}
+}
